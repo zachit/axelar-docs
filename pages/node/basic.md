@@ -81,7 +81,7 @@ axelard keys add my_account --home $AXELARD_HOME
 The public address of your account `my_account` was printed to stdout when you created it. You can display the address at any time:
 
 ```bash
-axelard keys show validator -a --home $AXELARD_HOME
+axelard keys show my_account -a --home $AXELARD_HOME
 ```
 
 ## Check your AXL balance
