@@ -34,6 +34,11 @@ Launch `vald`. Here are two ways to do it:
 axelard vald-start --validator-addr {VALOPER_ADDR} --chain-id $AXELARD_CHAIN_ID --log_level debug --home $AXELARD_HOME
 ```
 
+Find $AXELAR_CHAIN_ID under `chain_id` in the genesis file.
+```bash
+grep chain_id $AXELARD_HOME/config/genesis.json
+```
+
 2. **Redirect logs to file.** The password prompt may not be visible because `stdout` is redirected to the log file. In this case you may wish to pipe in your keyring password. See [Keyring backend](../../node/keyring) for more info.
 
 ```bash
