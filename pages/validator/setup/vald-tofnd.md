@@ -34,7 +34,7 @@ Launch `vald`. Here are two ways to do it:
 axelard vald-start --validator-addr {VALOPER_ADDR} --chain-id $AXELARD_CHAIN_ID --log_level debug --home $AXELARD_HOME
 ```
 
-Find $AXELAR_CHAIN_ID under `chain_id` in the genesis file.
+If you don't know `$AXELAR_CHAIN_ID` you can find it under `chain_id` in the genesis file:
 ```bash
 grep chain_id $AXELARD_HOME/config/genesis.json
 ```
